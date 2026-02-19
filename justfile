@@ -51,3 +51,7 @@ automate-amazon prompt=default_hop_demo_prompt:
 # Summarize a blog's latest post (headless, no auth needed)
 summarize-blog url="https://simonwillison.net/":
     claude --dangerously-skip-permissions --model opus "/bowser:hop-automate blog-summarizer \"{{url}}\" playwright headless"
+
+# Summarize today's top news headline (headless, no auth needed)
+summarize-news url="https://news.bbc.co.uk":
+    claude --dangerously-skip-permissions --model opus "/bowser:hop-automate news-headlines \"{{url}}\" playwright headless"

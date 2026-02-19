@@ -97,6 +97,7 @@ just ui-review                                # Parallel QA across all YAML stor
 # ─── Layer 4: Just (Reusability) ─────────────────────────────
 just automate-amazon                          # Amazon add-to-cart, multiple items
 just summarize-blog                           # Summarize a blog's latest post
+just summarize-news                           # Summarize a news sites top headline and generating a summary
 ```
 
 Every recipe is parameterized — run `just --list` for defaults, or override inline: `just test-qa headed="false"`.
