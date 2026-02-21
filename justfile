@@ -55,3 +55,7 @@ summarize-blog url="https://simonwillison.net/":
 # Summarize today's top news headline (headless, no auth needed)
 summarize-news url="https://news.bbc.co.uk":
     claude --dangerously-skip-permissions --model opus "/bowser:hop-automate news-headlines \"{{url}}\" playwright headless"
+
+# Check the price of a token on a DEX (headless, no auth needed)
+dex-price-check prompt="ETH":
+    just hop dex-price-check "{{prompt}}"

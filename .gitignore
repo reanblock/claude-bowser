@@ -61,5 +61,5 @@ images/*.mov
 .DS_Store
 
 # Claude
-.claude/
+.claude/data/sessions
 logs
